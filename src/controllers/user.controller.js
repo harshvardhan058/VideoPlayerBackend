@@ -65,4 +65,8 @@ const registerUser = asyncHandler(async (req, res) => {
   )
 });
 
-export { registerUser };
+const healthyCheckPoint = asyncHandler((req,res)=>{
+  res.status(200).json({message:"All healthy"})
+})
+
+export { registerUser,healthyCheckPoint };
